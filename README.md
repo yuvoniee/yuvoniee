@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/yuvoniee.png" width="130">
+<img src="https://github.com/yuvoniee.png" width="120" />
 
 # YUVONIEE
 
@@ -8,7 +8,7 @@
 
 `building things` • `breaking things` • `fixing things`
 
-⌗ **vibe-coded, occasionally understood**
+⌗ vibe-coded, occasionally understood
 
 </div>
 
@@ -17,47 +17,73 @@
 <div align="center">
 
 <pre>
-┌──────────────────────────────────────────────────────────────┐
-│  yuvoniee://profile                                          │
-│                                                              │
-│  > whoami                                                    │
-│                                                              │
-│  CSE student                                                 │
-│  Python enjoyer                                              │
-│  AI / ML explorer                                            │
-│  professional side-quest starter                            │
-│                                                              │
-│  > status                                                    │
-│                                                              │
-│  ONLINE                                                      │
-└──────────────────────────────────────────────────────────────┘
+╔══════════════════════════════════════════════════════════════╗
+║  yuvoniee://profile                                         ║
+║                                                              ║
+║  > whoami                                                    ║
+║                                                              ║
+║  CSE student                                                 ║
+║  Python enjoyer                                              ║
+║  AI / ML explorer                                            ║
+║  professional side-quest starter                             ║
+║                                                              ║
+║  > status                                                    ║
+║                                                              ║
+║  ● ONLINE                                                    ║
+╚══════════════════════════════════════════════════════════════╝
 </pre>
 
 </div>
 
-## // currently_building
+## // projects
 
 <table>
 <tr>
+
 <td width="50%">
 
-### 🌱 Flora
+### ◈ pixelcalc
 
-AI-focused project currently being built.
+A pixel-art calculator with interactive themes, retro sounds, and handcrafted animated worlds.
 
-`Python` `AI` `ML`
+`JavaScript` `HTML` `CSS`
 
 </td>
 
 <td width="50%">
 
-### ⚡ UniHack
+### ◈ Flora-AI
 
-Data standardization / processing project.
+A desktop companion that wakes up with you, quietly tracks your day, and never judges your 2am tab count.
 
-`Python` `Data` `AI`
+`Python` `AI` `Desktop`
 
 </td>
+
+</tr>
+
+<tr>
+
+<td width="50%">
+
+### ◈ TradeX
+
+A behavioral trading simulator built to train discipline and decision-making, not just profit.
+
+`Python` `Finance` `Simulation`
+
+</td>
+
+<td width="50%">
+
+### ◈ FOMORIA
+
+A tool for understanding markets, investments, and how financial decisions work.
+
+`Finance` `Learning` `Markets`
+
+</td>
+
 </tr>
 </table>
 
@@ -67,24 +93,42 @@ Data standardization / processing project.
 
 <div align="center">
 
-| CATEGORY | STACK |
-|---|---|
-| LANGUAGES | Python · JavaScript · HTML · CSS |
-| AI / ML | Machine Learning · LLMs · Prompt Engineering |
-| TOOLS | Git · GitHub · VS Code |
-| CURRENTLY LEARNING | Building better things without breaking them |
+`PYTHON` · `JAVASCRIPT` · `HTML` · `CSS`
+
+`AI / ML` · `LLMs` · `PROMPT ENGINEERING`
+
+`GIT` · `GITHUB` · `VS CODE`
 
 </div>
 
 ---
 
-## // profile_signal
+## // currently
+
+<pre>
+> scanning projects...
+
+[OK] pixelcalc
+[OK] Flora-AI
+[OK] TradeX
+[OK] FOMORIA
+
+> scanning brain...
+
+[WARN] too many ideas detected
+[WARN] 2am coding session detected
+[OK] still building
+</pre>
+
+---
+
+## // philosophy
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=yuvoniee&show_icons=true&hide_border=true&bg_color=050805&title_color=7CFF6B&text_color=B8D9BE&icon_color=7CFF6B">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yuvoniee&layout=compact&hide_border=true&bg_color=050805&title_color=7CFF6B&text_color=B8D9BE">
+> make it work  
+> make it interesting  
+> understand it eventually
 
 </div>
 
@@ -93,9 +137,15 @@ Data standardization / processing project.
 <div align="center">
 
 <pre>
-> end transmission_
-
-⌁ currently figuring it out
+╭──────────────────────────────────────────╮
+│                                          │
+│  ● system online                         │
+│  ● projects in progress                  │
+│  ● caffeine dependency unresolved        │
+│                                          │
+│  > end transmission_                     │
+│                                          │
+╰──────────────────────────────────────────╯
 </pre>
 
 </div>
