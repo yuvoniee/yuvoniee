@@ -2,109 +2,124 @@
 
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#020703"/>
-    <stop offset="55%" stop-color="#071409"/>
-    <stop offset="100%" stop-color="#020603"/>
+    <stop offset="0%" stop-color="#020702"/>
+    <stop offset="55%" stop-color="#061408"/>
+    <stop offset="100%" stop-color="#020502"/>
   </linearGradient>
 
+  <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+    <path d="M 28 0 L 0 0 0 28"
+          fill="none"
+          stroke="#16351b"
+          stroke-width="1"/>
+  </pattern>
+
   <filter id="glow">
-    <feGaussianBlur stdDeviation="5" result="blur"/>
+    <feGaussianBlur stdDeviation="4" result="blur"/>
     <feMerge>
       <feMergeNode in="blur"/>
       <feMergeNode in="SourceGraphic"/>
     </feMerge>
   </filter>
-
-  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-    <path d="M32 0H0V32" fill="none" stroke="#17451d" stroke-width="1"/>
-  </pattern>
 </defs>
 
-<!-- background -->
-<rect width="1200" height="260" rx="18" fill="url(#bg)"/>
-<rect width="1200" height="260" rx="18" fill="url(#grid)" opacity="0.45"/>
+<!-- BACKGROUND -->
+<rect width="1200" height="260" rx="22" fill="url(#bg)"/>
+<rect width="1200" height="260" rx="22" fill="url(#grid)" opacity="0.55"/>
 
-<!-- outer border -->
-<rect x="10" y="10" width="1180" height="240" rx="16"
-      fill="none" stroke="#245f2d" stroke-width="2"/>
+<!-- OUTER BORDER -->
+<rect x="8" y="8"
+      width="1184"
+      height="244"
+      rx="20"
+      fill="none"
+      stroke="#315f35"
+      stroke-width="2"/>
 
-<!-- terminal window -->
-<rect x="45" y="35" width="1110" height="190" rx="14"
-      fill="#030904" stroke="#317d3a" stroke-width="2"/>
+<rect x="18" y="18"
+      width="1164"
+      height="224"
+      rx="16"
+      fill="none"
+      stroke="#15371a"
+      stroke-width="1"/>
 
-<!-- terminal header -->
-<rect x="45" y="35" width="1110" height="48" rx="14"
-      fill="#061008"/>
+<!-- TERMINAL BAR -->
+<rect x="38" y="32"
+      width="1124"
+      height="58"
+      rx="12"
+      fill="#020602"
+      stroke="#2b6331"
+      stroke-width="1.5"/>
 
-<circle cx="72" cy="59" r="8" fill="#7cff6b" filter="url(#glow)"/>
-<circle cx="98" cy="59" r="8" fill="#397d40"/>
-<circle cx="124" cy="59" r="8" fill="#214d29"/>
+<!-- TERMINAL DOTS -->
+<circle cx="64" cy="61" r="9" fill="#8cff83" filter="url(#glow)"/>
+<circle cx="91" cy="61" r="9" fill="#34753b"/>
+<circle cx="118" cy="61" r="9" fill="#1e4725"/>
 
-<text x="155" y="66"
-      fill="#9cff91"
+<!-- TERMINAL TITLE -->
+<text x="150" y="68"
       font-family="monospace"
-      font-size="18"
-      font-weight="bold">
+      font-size="20"
+      font-weight="bold"
+      fill="#91ff89">
   YUVONIEE://PROFILE
 </text>
 
-<text x="1040" y="66"
-      fill="#7cff6b"
+<!-- STATUS -->
+<circle cx="1090" cy="61" r="5" fill="#8cff83"/>
+<text x="1104" y="67"
       font-family="monospace"
-      font-size="15">
-  ● ONLINE
+      font-size="14"
+      fill="#8cff83">
+  ONLINE
 </text>
 
-<!-- command -->
-<text x="85" y="125"
-      fill="#70ff61"
+<!-- MAIN TEXT -->
+<text x="65" y="142"
       font-family="monospace"
-      font-size="17">
-  &gt; whoami
-</text>
-
-<text x="85" y="155"
-      fill="#d2f7ce"
-      font-family="monospace"
-      font-size="22"
-      font-weight="bold">
+      font-size="36"
+      font-weight="bold"
+      fill="#8cff83">
   GRANTHINI C A
 </text>
 
-<text x="85" y="183"
-      fill="#80d879"
+<text x="66" y="171"
       font-family="monospace"
-      font-size="15">
+      font-size="16"
+      fill="#67a86d">
+  @yuvoniee // she/her
+</text>
+
+<text x="66" y="204"
+      font-family="monospace"
+      font-size="19"
+      font-weight="bold"
+      fill="#d1ffd0">
   CSE // PYTHON // AI
 </text>
 
-<text x="85" y="207"
-      fill="#69c962"
+<text x="66" y="230"
       font-family="monospace"
-      font-size="14">
+      font-size="15"
+      fill="#8cff83">
   building things • breaking things • fixing things
 </text>
 
-<!-- right status -->
-<text x="940" y="145"
-      fill="#7cff6b"
+<!-- RIGHT SIDE -->
+<text x="900" y="150"
       font-family="monospace"
-      font-size="13">
+      font-size="15"
+      fill="#8cff83">
   [ VIBE-CODED ]
 </text>
 
-<text x="940" y="173"
-      fill="#4e9e50"
+<text x="900" y="178"
       font-family="monospace"
-      font-size="12">
-  side_quests: MANY
-</text>
-
-<text x="940" y="198"
-      fill="#4e9e50"
-      font-family="monospace"
-      font-size="12">
-  bugs: PROBABLY
+      font-size="13"
+      fill="#4f8955">
+  occasionally understood
 </text>
 
 </svg>

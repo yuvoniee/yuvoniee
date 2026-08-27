@@ -1,38 +1,28 @@
-<svg width="1200" height="900" viewBox="0 0 1200 900"
+<svg width="1200" height="1050" viewBox="0 0 1200 1050"
      xmlns="http://www.w3.org/2000/svg">
 
 <defs>
 
-  <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#020603"/>
-    <stop offset="50%" stop-color="#071309"/>
-    <stop offset="100%" stop-color="#020603"/>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#020702"/>
+    <stop offset="55%" stop-color="#071608"/>
+    <stop offset="100%" stop-color="#020502"/>
   </linearGradient>
 
-  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#0b1c0e"/>
-    <stop offset="100%" stop-color="#050d07"/>
-  </linearGradient>
-
-  <pattern id="grid" width="30" height="30"
-           patternUnits="userSpaceOnUse">
-    <path d="M30 0H0V30"
+  <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+    <path d="M 28 0 L 0 0 0 28"
           fill="none"
-          stroke="#16451c"
+          stroke="#16351b"
           stroke-width="1"/>
   </pattern>
 
   <filter id="glow">
-    <feGaussianBlur stdDeviation="5" result="blur"/>
+    <feGaussianBlur stdDeviation="3" result="blur"/>
     <feMerge>
       <feMergeNode in="blur"/>
       <feMergeNode in="SourceGraphic"/>
     </feMerge>
   </filter>
-
-  <clipPath id="avatarClip">
-    <circle cx="125" cy="155" r="55"/>
-  </clipPath>
 
 </defs>
 
@@ -41,142 +31,144 @@
 <!-- BACKGROUND -->
 <!-- ===================================================== -->
 
-<rect width="1200" height="900"
-      rx="20"
-      fill="url(#background)"/>
-
-<rect width="1200" height="900"
-      rx="20"
-      fill="url(#grid)"
-      opacity="0.45"/>
+<rect width="1200" height="1050" rx="28" fill="url(#bg)"/>
+<rect width="1200" height="1050" rx="28" fill="url(#grid)" opacity="0.6"/>
 
 <rect x="8" y="8"
       width="1184"
-      height="884"
-      rx="18"
+      height="1034"
+      rx="25"
       fill="none"
-      stroke="#276a31"
+      stroke="#315f35"
       stroke-width="2"/>
+
+<rect x="18" y="18"
+      width="1164"
+      height="1014"
+      rx="22"
+      fill="none"
+      stroke="#15371a"
+      stroke-width="1"/>
 
 
 <!-- ===================================================== -->
 <!-- TERMINAL BAR -->
 <!-- ===================================================== -->
 
-<rect x="40" y="30"
-      width="1120"
-      height="65"
-      rx="14"
-      fill="#030805"
-      stroke="#2e7135"
-      stroke-width="2"/>
+<rect x="38" y="32"
+      width="1124"
+      height="62"
+      rx="13"
+      fill="#020602"
+      stroke="#2b6331"
+      stroke-width="1.5"/>
 
-<circle cx="70" cy="62" r="9"
-        fill="#83ff70"
+<circle cx="65" cy="63" r="9"
+        fill="#8cff83"
         filter="url(#glow)"/>
 
-<circle cx="98" cy="62" r="9"
-        fill="#397e41"/>
+<circle cx="92" cy="63" r="9" fill="#34753b"/>
+<circle cx="119" cy="63" r="9" fill="#1e4725"/>
 
-<circle cx="126" cy="62" r="9"
-        fill="#214d29"/>
-
-<text x="160" y="69"
-      fill="#9cff91"
+<text x="150" y="70"
       font-family="monospace"
       font-size="21"
-      font-weight="bold">
+      font-weight="bold"
+      fill="#91ff89">
   YUVONIEE://PROFILE
 </text>
 
-<text x="1015" y="69"
-      fill="#7cff6b"
+<circle cx="1090" cy="63" r="5" fill="#8cff83"/>
+
+<text x="1105" y="69"
       font-family="monospace"
-      font-size="15">
-  ● ONLINE
+      font-size="14"
+      fill="#8cff83">
+  ONLINE
 </text>
 
 
 <!-- ===================================================== -->
-<!-- IDENTITY PANEL -->
+<!-- PROFILE HEADER -->
 <!-- ===================================================== -->
 
-<rect x="40" y="120"
-      width="1120"
-      height="150"
+<rect x="38" y="118"
+      width="1124"
+      height="160"
       rx="15"
-      fill="url(#panel)"
-      stroke="#2b7133"
-      stroke-width="2"/>
+      fill="#071509"
+      stroke="#2b6331"
+      stroke-width="1.5"/>
 
+<!-- AVATAR -->
+<clipPath id="avatarClip">
+  <circle cx="135" cy="198" r="58"/>
+</clipPath>
 
-<!-- avatar border -->
-
-<circle cx="125" cy="195"
-        r="61"
-        fill="#030603"
-        stroke="#7cff6b"
+<circle cx="135" cy="198" r="65"
+        fill="#020602"
+        stroke="#8cff83"
         stroke-width="4"/>
 
-<!-- ACTUAL PROFILE IMAGE -->
 <image
   href="https://raw.githubusercontent.com/yuvoniee/yuvoniee/main/assets/avatar.jpg"
-  x="70"
+  x="77"
   y="140"
-  width="110"
-  height="110"
+  width="116"
+  height="116"
   preserveAspectRatio="xMidYMid slice"
-  clip-path="url(#avatarClip)"/>
+  clip-path="url(#avatarClip)"
+/>
 
-<circle cx="125" cy="195"
-        r="61"
+<circle cx="135" cy="198" r="58"
         fill="none"
-        stroke="#7cff6b"
-        stroke-width="3"/>
+        stroke="#315f35"
+        stroke-width="2"/>
 
-<circle cx="177" cy="245"
-        r="11"
-        fill="#79ff69"
-        stroke="#020603"
-        stroke-width="4"/>
+<!-- ONLINE DOT -->
+
+<circle cx="190" cy="249" r="13"
+        fill="#8cff83"
+        stroke="#020602"
+        stroke-width="5"/>
 
 
-<!-- identity -->
+<!-- NAME -->
 
-<text x="220" y="166"
-      fill="#8dff7f"
+<text x="220" y="170"
       font-family="monospace"
-      font-size="35"
-      font-weight="bold">
+      font-size="34"
+      font-weight="bold"
+      fill="#8cff83">
   GRANTHINI C A
 </text>
 
-<text x="220" y="196"
-      fill="#76bd73"
+<text x="220" y="198"
       font-family="monospace"
-      font-size="16">
+      font-size="16"
+      fill="#67a86d">
   @yuvoniee // she/her
 </text>
 
 <text x="220" y="230"
-      fill="#d0f4cb"
       font-family="monospace"
-      font-size="20"
-      font-weight="bold">
+      font-size="19"
+      font-weight="bold"
+      fill="#d1ffd0">
   CSE // PYTHON // AI
 </text>
 
-<text x="220" y="257"
-      fill="#7be873"
+<text x="220" y="255"
       font-family="monospace"
-      font-size="15">
+      font-size="15"
+      fill="#8cff83">
   building things • breaking things • fixing things
 </text>
 
-<text x="920" y="210"
-      fill="#7cff6b"
+<text x="925" y="195"
       font-family="monospace"
-      font-size="14">
+      font-size="15"
+      fill="#8cff83">
   [ VIBE-CODED ]
 </text>
 
@@ -185,84 +177,87 @@
 <!-- PROFILE SIGNAL -->
 <!-- ===================================================== -->
 
-<rect x="40" y="300"
+<rect x="38" y="305"
       width="330"
       height="205"
       rx="15"
-      fill="url(#panel)"
-      stroke="#2b7133"
-      stroke-width="2"/>
+      fill="#071509"
+      stroke="#2b6331"
+      stroke-width="1.5"/>
 
-<text x="65" y="337"
-      fill="#7cff6b"
+<text x="60" y="343"
       font-family="monospace"
       font-size="17"
-      font-weight="bold">
+      font-weight="bold"
+      fill="#8cff83">
   // PROFILE_SIGNAL
 </text>
 
-<line x1="65" y1="352"
-      x2="345" y2="352"
-      stroke="#1d5525"
+<line x1="60" y1="360"
+      x2="345" y2="360"
+      stroke="#214d27"
       stroke-width="2"/>
 
-<text x="65" y="390"
-      fill="#6fae6c"
+
+<text x="60" y="397"
       font-family="monospace"
-      font-size="13">
+      font-size="13"
+      fill="#67a86d">
   REPOSITORIES
 </text>
 
-<text x="290" y="390"
-      fill="#d2ffd0"
+<text x="300" y="397"
       font-family="monospace"
       font-size="19"
-      font-weight="bold">
+      font-weight="bold"
+      fill="#d1ffd0">
   05
 </text>
 
-<text x="65" y="425"
-      fill="#6fae6c"
+
+<text x="60" y="433"
       font-family="monospace"
-      font-size="13">
+      font-size="13"
+      fill="#67a86d">
   CONTRIBUTIONS
 </text>
 
-<text x="290" y="425"
-      fill="#d2ffd0"
+<text x="300" y="433"
       font-family="monospace"
       font-size="19"
-      font-weight="bold">
+      font-weight="bold"
+      fill="#d1ffd0">
   54
 </text>
 
-<text x="65" y="460"
-      fill="#6fae6c"
+
+<text x="60" y="469"
       font-family="monospace"
-      font-size="13">
+      font-size="13"
+      fill="#67a86d">
   FOLLOWERS
 </text>
 
-<text x="290" y="460"
-      fill="#d2ffd0"
+<text x="300" y="469"
       font-family="monospace"
       font-size="19"
-      font-weight="bold">
+      font-weight="bold"
+      fill="#d1ffd0">
   01
 </text>
 
-<text x="65" y="495"
-      fill="#6fae6c"
+
+<text x="60" y="497"
       font-family="monospace"
-      font-size="13">
+      font-size="13"
+      fill="#67a86d">
   STATUS
 </text>
 
-<text x="245" y="495"
-      fill="#7cff6b"
+<text x="280" y="497"
       font-family="monospace"
-      font-size="16"
-      font-weight="bold">
+      font-size="15"
+      fill="#8cff83">
   ONLINE
 </text>
 
@@ -271,72 +266,73 @@
 <!-- CURRENTLY BUILDING -->
 <!-- ===================================================== -->
 
-<rect x="395" y="300"
-      width="765"
+<rect x="390" y="305"
+      width="772"
       height="205"
       rx="15"
-      fill="url(#panel)"
-      stroke="#2b7133"
-      stroke-width="2"/>
+      fill="#071509"
+      stroke="#2b6331"
+      stroke-width="1.5"/>
 
-<text x="420" y="337"
-      fill="#7cff6b"
+<text x="415" y="343"
       font-family="monospace"
       font-size="17"
-      font-weight="bold">
+      font-weight="bold"
+      fill="#8cff83">
   // CURRENTLY_BUILDING
 </text>
 
-<line x1="420" y1="352"
-      x2="1135" y2="352"
-      stroke="#1d5525"
+<line x1="415" y1="360"
+      x2="1135" y2="360"
+      stroke="#214d27"
       stroke-width="2"/>
 
 
-<!-- Flora -->
+<!-- FLORA -->
 
-<text x="420" y="390"
-      fill="#baffb2"
+<text x="415" y="400"
       font-family="monospace"
-      font-size="18"
-      font-weight="bold">
+      font-size="17"
+      font-weight="bold"
+      fill="#d1ffd0">
   ◈ FLORA-AI
 </text>
 
-<text x="420" y="417"
-      fill="#78ae75"
+<text x="415" y="427"
       font-family="monospace"
-      font-size="14">
+      font-size="14"
+      fill="#67a86d">
   desktop companion • AI • Python
 </text>
 
-<rect x="420" y="435"
-      width="660"
+<rect x="415" y="444"
+      width="680"
       height="5"
       rx="3"
-      fill="#122b16"/>
+      fill="#102916"/>
 
-<rect x="420" y="435"
-      width="420"
+<rect x="415" y="444"
+      width="480"
       height="5"
       rx="3"
-      fill="#72ff67"/>
+      fill="#8cff83"
+      filter="url(#glow)"/>
 
 
-<!-- TradeX -->
+<!-- TRADEX -->
 
-<text x="420" y="475"
-      fill="#baffb2"
+<text x="415" y="480"
       font-family="monospace"
-      font-size="18"
-      font-weight="bold">
+      font-size="17"
+      font-weight="bold"
+      fill="#d1ffd0">
   ◈ TRADEX
 </text>
 
-<text x="420" y="498"
-      fill="#78ae75"
+<text x="415" y="501"
       font-family="monospace"
-      font-size="14">
+      font-size="14"
+      fill="#67a86d">
   behavioral trading simulator • discipline first
 </text>
 
@@ -345,176 +341,172 @@
 <!-- PROJECTS -->
 <!-- ===================================================== -->
 
-<text x="40" y="550"
-      fill="#7cff6b"
+<text x="38" y="555"
       font-family="monospace"
-      font-size="18"
-      font-weight="bold">
+      font-size="19"
+      font-weight="bold"
+      fill="#8cff83">
   // PROJECTS
 </text>
 
-<line x1="160" y1="544"
-      x2="1160" y2="544"
-      stroke="#1d5525"
-      stroke-width="2"/>
+<line x1="160" y1="550"
+      x2="1162" y2="550"
+      stroke="#214d27"
+      stroke-width="1"/>
 
 
-<!-- Project 1 -->
+<!-- PIXELCALC -->
 
-<rect x="40" y="575"
-      width="260"
-      height="155"
+<rect x="38" y="580"
+      width="267"
+      height="170"
       rx="13"
-      fill="#071209"
-      stroke="#285f30"
-      stroke-width="2"/>
+      fill="#061108"
+      stroke="#2b6331"/>
 
-<text x="60" y="610"
-      fill="#c5ffc0"
+<text x="58" y="615"
       font-family="monospace"
       font-size="16"
-      font-weight="bold">
+      font-weight="bold"
+      fill="#d1ffd0">
   PIXELCALC
 </text>
 
-<text x="60" y="638"
-      fill="#70ad6e"
+<text x="58" y="646"
       font-family="monospace"
-      font-size="13">
+      font-size="13"
+      fill="#67a86d">
   pixel-art calculator
 </text>
 
-<text x="60" y="661"
-      fill="#70ad6e"
+<text x="58" y="670"
       font-family="monospace"
-      font-size="13">
+      font-size="13"
+      fill="#67a86d">
   retro interactive UI
 </text>
 
-<text x="60" y="700"
-      fill="#7cff6b"
+<text x="58" y="716"
       font-family="monospace"
-      font-size="11">
+      font-size="12"
+      fill="#8cff83">
   JavaScript • CSS
 </text>
 
 
-<!-- Project 2 -->
+<!-- FLORA -->
 
-<rect x="320" y="575"
-      width="260"
-      height="155"
+<rect x="322" y="580"
+      width="267"
+      height="170"
       rx="13"
-      fill="#071209"
-      stroke="#285f30"
-      stroke-width="2"/>
+      fill="#061108"
+      stroke="#2b6331"/>
 
-<text x="340" y="610"
-      fill="#c5ffc0"
+<text x="342" y="615"
       font-family="monospace"
       font-size="16"
-      font-weight="bold">
+      font-weight="bold"
+      fill="#d1ffd0">
   FLORA-AI
 </text>
 
-<text x="340" y="638"
-      fill="#70ad6e"
+<text x="342" y="646"
       font-family="monospace"
-      font-size="13">
+      font-size="13"
+      fill="#67a86d">
   desktop companion
 </text>
 
-<text x="340" y="661"
-      fill="#70ad6e"
+<text x="342" y="670"
       font-family="monospace"
-      font-size="13">
+      font-size="13"
+      fill="#67a86d">
   quietly tracks your day
 </text>
 
-<text x="340" y="700"
-      fill="#7cff6b"
+<text x="342" y="716"
       font-family="monospace"
-      font-size="11">
+      font-size="12"
+      fill="#8cff83">
   Python • AI
 </text>
 
 
-<!-- Project 3 -->
+<!-- TRADEX -->
 
-<rect x="600" y="575"
-      width="260"
-      height="155"
+<rect x="606" y="580"
+      width="267"
+      height="170"
       rx="13"
-      fill="#071209"
-      stroke="#285f30"
-      stroke-width="2"/>
+      fill="#061108"
+      stroke="#2b6331"/>
 
-<text x="620" y="610"
-      fill="#c5ffc0"
+<text x="626" y="615"
       font-family="monospace"
       font-size="16"
-      font-weight="bold">
+      font-weight="bold"
+      fill="#d1ffd0">
   TRADEX
 </text>
 
-<text x="620" y="638"
-      fill="#70ad6e"
+<text x="626" y="646"
       font-family="monospace"
-      font-size="13">
+      font-size="13"
+      fill="#67a86d">
   behavioral trading
 </text>
 
-<text x="620" y="661"
-      fill="#70ad6e"
+<text x="626" y="670"
       font-family="monospace"
-      font-size="13">
+      font-size="13"
+      fill="#67a86d">
   discipline simulator
 </text>
 
-<text x="620" y="700"
-      fill="#7cff6b"
+<text x="626" y="716"
       font-family="monospace"
-      font-size="11">
+      font-size="12"
+      fill="#8cff83">
   Python • Finance
 </text>
 
 
-<!-- Project 4 -->
+<!-- FOMORIA -->
 
-<rect x="880" y="575"
-      width="280"
-      height="155"
+<rect x="890" y="580"
+      width="272"
+      height="170"
       rx="13"
-      fill="#071209"
-      stroke="#285f30"
-      stroke-width="2"/>
+      fill="#061108"
+      stroke="#2b6331"/>
 
-<text x="900" y="610"
-      fill="#c5ffc0"
+<text x="910" y="615"
       font-family="monospace"
       font-size="16"
-      font-weight="bold">
+      font-weight="bold"
+      fill="#d1ffd0">
   FOMORIA
 </text>
 
-<text x="900" y="638"
-      fill="#70ad6e"
+<text x="910" y="646"
       font-family="monospace"
-      font-size="13">
+      font-size="13"
+      fill="#67a86d">
   market learning tool
 </text>
 
-<text x="900" y="661"
-      fill="#70ad6e"
+<text x="910" y="670"
       font-family="monospace"
-      font-size="13">
+      font-size="13"
+      fill="#67a86d">
   investments • markets
 </text>
 
-<text x="900" y="700"
-      fill="#7cff6b"
+<text x="910" y="716"
       font-family="monospace"
-      font-size="11">
+      font-size="12"
+      fill="#8cff83">
   Finance • Learning
 </text>
 
@@ -523,35 +515,67 @@
 <!-- SYSTEM LOG -->
 <!-- ===================================================== -->
 
-<rect x="40" y="765"
-      width="1120"
-      height="85"
-      rx="13"
-      fill="#020603"
-      stroke="#285f30"
-      stroke-width="2"/>
+<rect x="38" y="780"
+      width="1124"
+      height="135"
+      rx="14"
+      fill="#020602"
+      stroke="#2b6331"
+      stroke-width="1.5"/>
 
-<text x="65" y="797"
-      fill="#7cff6b"
+<text x="60" y="817"
       font-family="monospace"
-      font-size="14"
-      font-weight="bold">
+      font-size="15"
+      font-weight="bold"
+      fill="#8cff83">
   &gt; system.log
 </text>
 
-<text x="65" y="823"
-      fill="#65a962"
+<text x="60" y="850"
       font-family="monospace"
-      font-size="12">
-  [ OK ] profile loaded   [ OK ] projects detected   [ WARN ] too many side quests
+      font-size="13"
+      fill="#67a86d">
+  [ OK ] profile loaded
 </text>
 
-<text x="950" y="823"
-      fill="#7cff6b"
+<text x="245" y="850"
       font-family="monospace"
-      font-size="12"
-      font-weight="bold">
+      font-size="13"
+      fill="#67a86d">
+  [ OK ] projects detected
+</text>
+
+<text x="450" y="850"
+      font-family="monospace"
+      font-size="13"
+      fill="#67a86d">
+  [ WARN ] too many side quests
+</text>
+
+<text x="970" y="850"
+      font-family="monospace"
+      font-size="13"
+      fill="#8cff83">
   [ OK ] still building_
+</text>
+
+
+<!-- ===================================================== -->
+<!-- FOOTER -->
+<!-- ===================================================== -->
+
+<text x="490" y="965"
+      font-family="monospace"
+      font-size="14"
+      fill="#67a86d">
+  &gt; currently figuring it out
+</text>
+
+<text x="530" y="995"
+      font-family="monospace"
+      font-size="13"
+      fill="#8cff83">
+  &lt; end transmission_
 </text>
 
 </svg>
