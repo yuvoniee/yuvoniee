@@ -162,7 +162,7 @@
       font-family="monospace"
       font-size="15"
       fill="#8cff83">
-  building things â€¢ breaking things â€¢ fixing things
+  building things - breaking things - fixing things
 </text>
 
 <text x="925" y="195"
@@ -295,14 +295,14 @@
       font-size="17"
       font-weight="bold"
       fill="#d1ffd0">
-  â—ˆ FLORA-AI
+  > FLORA-AI
 </text>
 
 <text x="415" y="427"
       font-family="monospace"
       font-size="14"
       fill="#67a86d">
-  desktop companion â€¢ AI â€¢ Python
+  desktop companion - AI - Python
 </text>
 
 <rect x="415" y="444"
@@ -326,14 +326,14 @@
       font-size="17"
       font-weight="bold"
       fill="#d1ffd0">
-  â—ˆ TRADEX
+  > TRADEX
 </text>
 
 <text x="415" y="501"
       font-family="monospace"
       font-size="14"
       fill="#67a86d">
-  behavioral trading simulator â€¢ discipline first
+  behavioral trading simulator - discipline first
 </text>
 
 
@@ -390,8 +390,8 @@
       font-family="monospace"
       font-size="12"
       fill="#8cff83">
-  JavaScript â€¢ CSS
-</text>
+  JavaScript - CSS
+</text>flora
 
 
 <!-- FLORA -->
@@ -429,7 +429,7 @@
       font-family="monospace"
       font-size="12"
       fill="#8cff83">
-  Python â€¢ AI
+  Python - AI
 </text>
 
 
@@ -468,7 +468,7 @@
       font-family="monospace"
       font-size="12"
       fill="#8cff83">
-  Python â€¢ Finance
+  Python - Finance
 </text>
 
 
@@ -500,14 +500,14 @@
       font-family="monospace"
       font-size="13"
       fill="#67a86d">
-  investments â€¢ markets
+  investments - markets
 </text>
 
 <text x="910" y="716"
       font-family="monospace"
       font-size="12"
       fill="#8cff83">
-  Finance â€¢ Learning
+  Finance - Learning
 </text>
 
 
