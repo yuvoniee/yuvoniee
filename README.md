@@ -4,6 +4,6 @@
 
 <br>
 
-<img src="./assets/matrix-name.gif" width="700" alt="YUVONIEE">
+<img src="./assets/granthini-frog-terminal-animated.gif" width="900" alt="GRANTHINI frog terminal banner">
 
 </div>
